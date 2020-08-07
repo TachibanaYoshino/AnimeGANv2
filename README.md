@@ -12,14 +12,14 @@
   
 **News:**    
 ```yaml
-The improvement directions of AnimeGAN+ mainly include the following 4 points:  
+The improvement directions of AnimeGANv2 mainly include the following 4 points:  
 ```  
 - [x] 1. Solve the problem of high-frequency artifacts in the generated image.  
 - [x] 2. It is easy to train and directly achieve the effects in the paper.  
 - [x] 3. Further reduce the number of parameters of the generator network.**(8.17 Mb)**  
 - [x] 4. Use new high-quality style data, which come from BD movies as much as possible.  
    
-   &ensp;&ensp;&ensp;&ensp;&ensp;  AnimeGAN A can be accessed from [here](https://github.com/TachibanaYoshino/AnimeGAN).    
+   &ensp;&ensp;&ensp;&ensp;&ensp;  AnimeGAN can be accessed from [here](https://github.com/TachibanaYoshino/AnimeGAN).    
 ___  
 
 ## Requirements  
