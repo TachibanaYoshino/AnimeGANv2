@@ -14,10 +14,10 @@
 ```yaml
 The improvement directions of AnimeGAN+ mainly include the following 4 points:  
 ```
-&ensp;&ensp; - [x] ;&ensp;1. Solve the problem of high-frequency artifacts in the generated image.  
-&ensp;&ensp; - [x] ;&ensp;2. It is easy to train and directly achieve the effects in the paper.  
-&ensp;&ensp; - [x] ;&ensp;3. Further reduce the number of parameters of the generator network.**(8.17 Mb)**  
-&ensp;&ensp; - [x] ;&ensp;4. Use new high-quality style data, which come from BD movies as much as possible.  
+&ensp;&ensp; - [x] &ensp;1. Solve the problem of high-frequency artifacts in the generated image.  
+&ensp;&ensp; - [x] &ensp;2. It is easy to train and directly achieve the effects in the paper.  
+&ensp;&ensp; - [x] &ensp;3. Further reduce the number of parameters of the generator network.**(8.17 Mb)**  
+&ensp;&ensp; - [x] &ensp;4. Use new high-quality style data, which come from BD movies as much as possible.  
    
    &ensp;&ensp;&ensp;&ensp;&ensp;  AnimeGAN A can be accessed from [here](https://github.com/TachibanaYoshino/AnimeGAN).    
 ___  
@@ -47,30 +47,30 @@ ____
 :heart_eyes:  Photo  to  Paprika  Style  
   
 ![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%201.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%201.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2037.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2037.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2031.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2031.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2021.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2021.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2060.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2060.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2023.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2023.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2024.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2024.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2046.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2046.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2030.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2030.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2028.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2028.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2044.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Paprika/HR_photo/%2044.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2037.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2037.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2031.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2031.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2021.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2021.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2060.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2060.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2023.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2023.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2024.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2024.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2046.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2046.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2030.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2030.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2028.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2028.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2044.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/HR_photo/%2044.jpg)  
 ____  
 :heart_eyes:  Photo  to  Hayao  Style   
   
 ![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%201.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%201.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2037.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2037.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2031.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2031.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2021.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2021.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2060.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2060.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2023.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2023.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2024.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2024.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2046.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2046.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2030.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2030.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2028.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2028.jpg)  
-![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2044.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/result/Hayao/HR_photo/%2044.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2037.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2037.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2031.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2031.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2021.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2021.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2060.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2060.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2023.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2023.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2024.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2024.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2046.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2046.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2030.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2030.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2028.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2028.jpg)  
+![](https://github.com/TachibanaYoshino/AnimeGAN/blob/master/result/Hayao/photo/%2044.jpg) ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/HR_photo/%2044.jpg)  
 ____  
 :heart_eyes:  Photo  to  Shinkai  Style   
 **TBD**
