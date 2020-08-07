@@ -3,11 +3,11 @@
 [Open Source]. The improved version of AnimeGAN.  
 -----  
 **Focus:**  
-|-Anime style-|-film-|-Picture amount-|-Quality-|-Download link-|
+|Anime style|film|Picture amount|Quality|Download link|
 | ------ | ------ |------ |------ |------ |
-|-Miyazaki Hayao-|-THE Wind Rises-|-1752-|-1080p-|- ***TBD*** -|
-|-Makoto Shinkai-|-Weathering with you-|-5908-|-BD-|-***TBD***-|
-|-Kon Satoshi-|-Paprika-|-1255-|-BD-|-***TBD***-|
+|Miyazaki Hayao|THE Wind Rises|1752|1080p| ***TBD*** |
+|Makoto Shinkai|Weathering with you|5908|BD|***TBD***|
+|Kon Satoshi|Paprika|1255|BD|***TBD***|
   
   
 **News:**    
