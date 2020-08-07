@@ -3,11 +3,11 @@
 [Open Source]. The improved version of AnimeGAN.  
 -----  
 **Focus:**  
--Anime style-|-film-|-Picture amount-|-Quality-|-Download link-|
---|:--:|--:
--Miyazaki Hayao-|-THE Wind Rises-|-1752-|-1080p-|- ***TBD*** -|
--Makoto Shinkai-|-Weathering with you-|-5908-|-BD-|-***TBD***-|
--Kon Satoshi-|-Paprika-|-1255-|-BD-|-***TBD***-|
+|-Anime style-|-film-|-Picture amount-|-Quality-|-Download link-|
+| ------ | ------ |------ |------ |------ |
+|-Miyazaki Hayao-|-THE Wind Rises-|-1752-|-1080p-|- ***TBD*** -|
+|-Makoto Shinkai-|-Weathering with you-|-5908-|-BD-|-***TBD***-|
+|-Kon Satoshi-|-Paprika-|-1255-|-BD-|-***TBD***-|
   
   
 **News:**    
@@ -39,7 +39,7 @@ ___
   > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/real --style_name H`  
   
 ### 2. Convert video to anime   
-  eg. `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  ../checkpoint/generator_Paprika_weight`  
+  > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  ../checkpoint/generator_Paprika_weight`  
     
 ____  
 ## Results  
