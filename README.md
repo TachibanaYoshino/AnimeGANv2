@@ -6,7 +6,7 @@
 |Anime style|Film|Picture Number|Quality|Download link|
 | :------: | :------: |:------: | :------: | :------: |
 |Miyazaki Hayao|The Wind Rises|1752|1080p| ***TBD*** |
-|Makoto Shinkai|Your Name|1642|BDRip|***TBD***|
+|Makoto Shinkai|Your Name|1642|BD|***TBD***|
 |Kon Satoshi|Paprika|1255|BDRip|***TBD***|
   
   &ensp;&ensp;&ensp;&ensp;&ensp;Different styles of training have different loss weights!
