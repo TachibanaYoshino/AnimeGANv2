@@ -1,2 +1,2 @@
-model_checkpoint_path: "Paprika-74.ckpt"
-all_model_checkpoint_paths: "Paprika-74.ckpt"
+model_checkpoint_path: "Paprika-54.ckpt"
+all_model_checkpoint_paths: "Paprika-54.ckpt"
