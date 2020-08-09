@@ -6,8 +6,8 @@
 |Anime style|Film|Picture Number|Quality|Download link|
 | :------: | :------: |:------: | :------: | :------: |
 |Miyazaki Hayao|The Wind Rises|1752|1080p| ***TBD*** |
-|Makoto Shinkai|Weathering with you|5908|BD|***TBD***|
-|Kon Satoshi|Paprika|1255|BD|***TBD***|
+|Makoto Shinkai|Your Name|1642|BDRip|***TBD***|
+|Kon Satoshi|Paprika|1255|BDRip|***TBD***|
   
   &ensp;&ensp;&ensp;&ensp;&ensp;Different styles of training have different loss weights!
   
@@ -40,7 +40,7 @@ ___
   > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --style_name Paprika/HR_photo`  
   
 ### 2. Convert video to anime   
-  > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  ../checkpoint/generator_Paprika_weight`  
+  > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  checkpoint/generator_Paprika_weight`  
     
 ____  
 ## Results  
