@@ -11,9 +11,9 @@ def read_img(image_path):
 # Calculates the average brightness in the specified irregular image
 def calculate_average_brightness(img):
     # Average value of three color channels
-    B = img[..., 0].mean()
+    R = img[..., 0].mean()
     G = img[..., 1].mean()
-    R = img[..., 2].mean()
+    B = img[..., 2].mean()
 
     brightness = 0.299 * R + 0.587 * G + 0.114 * B
     return brightness, B, G, R

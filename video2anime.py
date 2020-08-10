@@ -115,7 +115,7 @@ def cvt2anime_video(video, output, checkpoint_dir, output_format='MP4V', img_siz
             img = convert_image(frame, img_size)
             fake_img = sess.run(test_generated, feed_dict={test_real: img})
             fake_img = inverse_image(fake_img)
-            fake_img = cv2.cvtColor(adjust_brightness_from_src_to_dst(fake_img, frame), cv2.COLOR_BGR2RGB)
+            fake_img = adjust_brightness_from_src_to_dst(fake_img, cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
             out.write(fake_img)
             pbar.update(1)
 
