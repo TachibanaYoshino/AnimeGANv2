@@ -69,7 +69,9 @@ ___
     
 ____  
 ## Results  
-   
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/AnimeGANv2.png)   
+     
+____ 
 :heart_eyes:  Photo  to  Paprika  Style  
   
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/37.png)   
