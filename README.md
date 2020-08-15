@@ -1,13 +1,38 @@
 # AnimeGANv2   
 
 [Open Source]. The improved version of AnimeGAN.  
+Landscape photos/videos to anime  
 -----  
 **Focus:**  
-|Anime style|Film|Picture Number|Quality|Download link|
-| :------: | :------: |:------: | :------: | :------: |
-|Miyazaki Hayao|The Wind Rises|1752|1080p| ***TBD*** |
-|Makoto Shinkai|Your Name|1642|BD|***TBD***|
-|Kon Satoshi|Paprika|1255|BDRip|***TBD***|
+<table border="1px ridge">
+	<tr align="center">
+	    <th>Anime style</th>
+	    <th>Film</th>  
+	    <th>Picture Number</th>  
+      <th>Quality</th>
+      <th>Download Style Dataset</th>
+	</tr >
+	<tr align="center">
+      <td>Miyazaki Hayao</td>
+      <td>The Wind Rises</td>
+      <td>1752</td>
+      <td>1080p</td>
+	    <td rowspan="3"><a href="https://github.com/TachibanaYoshino/AnimeGANv2/releases/tag/1.0">Link</a></td>
+	</tr>
+	<tr align="center">
+	    <td>Makoto Shinkai</td>  
+	    <td>Your Name & Weathering with you</td>
+      <td>1445</td>
+      <td>BD</td>
+	</tr>
+	<tr align="center">
+	    <td>Kon Satoshi</td>
+	    <td>Paprika</td>
+      <td>1284</td>
+      <td>BDRip</td>
+	</tr>
+</table>  
+  
   
   &ensp;&ensp;&ensp;&ensp;&ensp;Different styles of training have different loss weights!
   
@@ -37,7 +62,7 @@ ___
 ## Usage  
 
 ### 1. Inference      
-  > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --style_name Paprika/HR_photo`  
+  > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --style_name Hayao/HR_photo`  
   
 ### 2. Convert video to anime   
   > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  checkpoint/generator_Paprika_weight`  
