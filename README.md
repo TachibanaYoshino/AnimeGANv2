@@ -72,18 +72,18 @@ ____
    
 :heart_eyes:  Photo  to  Paprika  Style  
   
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/34.png)   
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/10.png)     
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/15.png)  
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/35.png)  
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/39.png)  
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/42.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/37.png)   
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/38.png)     
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/6.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/7.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/9.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/21.png)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/44.png)  
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/41.png)  
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/32.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/1.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/8.png)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/11.png)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/5.png)  
-![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/18.png)   
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/15.png)   
 ____  
 :heart_eyes:  Photo  to  Hayao  Style   
   
@@ -101,4 +101,15 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/18.png)    
 ____  
 :heart_eyes:  Photo  to  Shinkai  Style   
-**TBD**
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/7.png)   
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/9.png)     
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/11.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/15.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/17.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/22.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/27.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/33.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/32.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/21.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/3.png)  
+![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/26.png)  
