@@ -1,2 +1,2 @@
-model_checkpoint_path: "Shinkai-50.ckpt"
-all_model_checkpoint_paths: "Shinkai-50.ckpt"
+model_checkpoint_path: "Shinkai-53.ckpt"
+all_model_checkpoint_paths: "Shinkai-53.ckpt"
