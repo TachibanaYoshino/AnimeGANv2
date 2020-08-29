@@ -29,7 +29,7 @@ def preprocessing(img, size=[256,256]):
 if __name__ == '__main__':
 
     for dirpath, dirnames, filenames in os.walk('../dataset/test/HR_photo'):
-        style = '../results/Paprika/concat/'
+        style = '../results/Hayao/concat/'
         check_folder(style)
         c1 = len(filenames)
         i = 0
@@ -37,7 +37,7 @@ if __name__ == '__main__':
         for filepath in tqdm(filenames):
             i += 1
             img_path1 = os.path.join(dirpath, filepath)
-            img_path2 = os.path.join(dirpath.replace('dataset/test/','results/Paprika/'), filepath)
+            img_path2 = os.path.join(dirpath.replace('dataset/test/','results/Hayao/'), filepath)
 
             img1 = cv2.imread(img_path1)
             img1 = preprocessing(img1)
@@ -52,7 +52,7 @@ if __name__ == '__main__':
             im_A1 = np.concatenate([img1, cut1], 1)
             im_AB = np.concatenate([im_A1, img2], 1)
 
-            cv2.imwrite(style + str(i) + '.png', im_AB)
+            cv2.imwrite(style + str(i) + '.jpg', im_AB)
 
 
 

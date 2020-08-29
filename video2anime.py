@@ -13,7 +13,7 @@ from tqdm import tqdm
 import numpy as np
 import tensorflow as tf
 
-from net import generator
+from net import generator,generator_lite
 from tools.utils import preprocessing, check_folder
 from tools.adjust_brightness import adjust_brightness_from_src_to_dst
 
@@ -24,7 +24,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description=desc)
     parser.add_argument('--video', type=str, default='video/input/'+ '2.mp4',
                         help='video file or number for webcam')
-    parser.add_argument('--checkpoint_dir', type=str, default='checkpoint/generator_Paprika_weight',
+    parser.add_argument('--checkpoint_dir', type=str, default='../checkpoint/generator_Paprika_weight',
                         help='Directory name to save the checkpoints')
     parser.add_argument('--output', type=str, default='video/output/' + 'Paprika',
                         help='output path')
@@ -70,7 +70,10 @@ def cvt2anime_video(video, output, checkpoint_dir, output_format='MP4V', img_siz
     test_real = tf.compat.v1.placeholder(tf.float32, [1, None, None, 3], name='test')
 
     with tf.compat.v1.variable_scope("generator", reuse=False):
-        test_generated = generator.G_net(test_real).fake
+        if 'lite' in checkpoint_dir:
+            test_generated = generator_lite.G_net(test_real).fake
+        else:
+            test_generated = generator.G_net(test_real).fake
 
     # load video
     vid = cv2.VideoCapture(video)
@@ -89,7 +92,7 @@ def cvt2anime_video(video, output, checkpoint_dir, output_format='MP4V', img_siz
         if ckpt and ckpt.model_checkpoint_path:
             ckpt_name = os.path.basename(ckpt.model_checkpoint_path)  # first line
             saver.restore(sess, os.path.join(checkpoint_dir, ckpt_name))
-            print(" [*] Success to read {}".format(ckpt_name))
+            print(" [*] Success to read {}".format(os.path.join(checkpoint_dir, ckpt_name)))
         else:
             print(" [*] Failed to find a checkpoint")
             return

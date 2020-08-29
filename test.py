@@ -5,18 +5,18 @@ from tqdm import tqdm
 from glob import glob
 import time
 import numpy as np
-from net import generator
+from net import generator,generator_lite
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 def parse_args():
     desc = "AnimeGANv2"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--checkpoint_dir', type=str, default='checkpoint/'+'generator_Hayao_weight',
+    parser.add_argument('--checkpoint_dir', type=str, default='checkpoint/'+'generator_Shinkai_weight',
                         help='Directory name to save the checkpoints')
-    parser.add_argument('--test_dir', type=str, default='dataset/test/test_photo',
+    parser.add_argument('--test_dir', type=str, default='dataset/test/t',
                         help='Directory name of test photos')
-    parser.add_argument('--style_name', type=str, default='Hayao/test_photo',
+    parser.add_argument('--style_name', type=str, default='Shinkai/t',
                         help='what style you want to get')
     parser.add_argument('--if_adjust_brightness', type=bool, default=True,
                         help='adjust brightness by the real photo')
@@ -39,7 +39,10 @@ def test(checkpoint_dir, style_name, test_dir, if_adjust_brightness, img_size=[2
     test_real = tf.placeholder(tf.float32, [1, None, None, 3], name='test')
 
     with tf.variable_scope("generator", reuse=False):
-        test_generated = generator.G_net(test_real).fake
+        if 'lite' in checkpoint_dir:
+            test_generated = generator_lite.G_net(test_real).fake
+        else:
+            test_generated = generator.G_net(test_real).fake
     saver = tf.train.Saver()
 
     gpu_options = tf.GPUOptions(allow_growth=True)
@@ -50,7 +53,7 @@ def test(checkpoint_dir, style_name, test_dir, if_adjust_brightness, img_size=[2
         if ckpt and ckpt.model_checkpoint_path:
             ckpt_name = os.path.basename(ckpt.model_checkpoint_path)  # first line
             saver.restore(sess, os.path.join(checkpoint_dir, ckpt_name))
-            print(" [*] Success to read {}".format(ckpt_name))
+            print(" [*] Success to read {}".format(os.path.join(checkpoint_dir, ckpt_name)))
         else:
             print(" [*] Failed to find a checkpoint")
             return
