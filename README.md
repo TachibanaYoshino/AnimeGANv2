@@ -47,7 +47,7 @@ The improvement directions of AnimeGANv2 mainly include the following 4 points:
    
    &ensp;&ensp;&ensp;&ensp;&ensp;  AnimeGAN can be accessed from [here](https://github.com/TachibanaYoshino/AnimeGAN).  
    
-**(suitable for Google Colab) the out-of-the-box Jupyter Notebook link is [here](https://colab.research.google.com/github/CyFeng16/MVIMP/blob/master/docs/MVIMP_AnimeGANv2_Demo.ipynb). **
+**(suitable for Google Colab) the out-of-the-box Jupyter Notebook link is [here](https://colab.research.google.com/github/CyFeng16/MVIMP/blob/master/docs/MVIMP_AnimeGANv2_Demo.ipynb).**
 ___  
 
 ## Requirements  
