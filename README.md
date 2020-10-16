@@ -1,7 +1,7 @@
 # AnimeGANv2   
 
-[Open Source]. The improved version of AnimeGAN.  
-Landscape photos/videos to anime  
+「Open Source」. The improved version of AnimeGAN.  
+「[Project Page](https://tachibanayoshino.github.io/AnimeGANv2/)」 | Landscape photos/videos to anime  
 -----  
 **Focus:**  
 <table border="1px ridge">
