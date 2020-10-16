@@ -1,0 +1,162 @@
+/* Un-break mobile pages. */
+* {
+        text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+}
+
+/* Page background and default foreground colors */
+body {
+	background: rgb(255, 249, 238);
+	color: rgb(0, 0, 0);
+	padding-bottom: 5vw;
+}
+@media screen and (max-width: 800px) {
+ body {
+	font-size: 3vw;
+	font-family: 'Segoe UI';
+ }
+}
+
+/* Default link colors */
+a {
+	color: #2a00c0;
+	text-decoration: none;
+}
+a:hover, a:active {
+	color: rgb(255, 0, 0);
+}
+
+.roof {
+	line-height: 40px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	padding-right: 20px;
+	text-align: right;
+	font-family: Arial, 'Segoe UI';
+	font-weight: bold;
+	font-size: 16px;
+	height: 40px;
+	background-color:#fcfda3 ;
+	border-bottom: 0.15vw solid #000;
+}
+@media screen and (max-width: 800px) {
+ .roof {
+	height: 2.75vw;
+	border-bottom: 0.15vw solid #000;
+	font-size: 1.75vw;
+	padding: 0.025vw 1.25vw;
+ }
+}
+
+/* Centered tables or divs */
+.content {
+	width: 800px;
+	margin: 0px auto;
+}
+@media screen and (max-width: 800px) {
+ .content {
+	width: 90vw;
+ }
+}
+
+/* Paper listings */
+.pageheader {
+	text-align: center;
+	padding-top: 80px;
+	padding-bottom: 56px;
+}
+@media screen and (max-width: 800px) {
+ .pageheader {
+	padding-top: 10vw;
+	padding-bottom: 7vw;
+ }
+}
+.theme {
+	font-size: 250%;
+	font-weight: bold;
+	color: #b38f18;
+}
+.authors {
+	font-size: 100%;
+	font-family: Cochin;
+}
+
+.table{
+	max-width: 100%;
+	text-align: center;
+	font-size: 16px;
+	font-family: Cambria;
+}
+@media screen and (max-width: 800px) {
+ .table {
+	padding-top: 7vw;
+	padding-bottom: 7vw;
+ }
+}
+
+.img1, .img2, .img3 {
+	text-align: center;
+}
+.img1 img {
+	max-width: 100%;
+}
+.img2 img {
+	max-width: 100%;
+}
+.img3 img {
+	max-width: 100%;
+}
+
+.longcaption {
+	margin: 14px;
+	font-size: 14px;
+	color: rgb(83, 83, 83);
+	font-style: italic;
+	font-family: 'Lucida Sans Unicode';
+	text-align: justify;
+	font-weight: lighter;
+}
+@media screen and (max-width: 700px) {
+ .longcaption {
+	margin: 3vw;
+ }
+}
+
+/* sections */
+.section {
+	font-size: 125%;
+	font-weight: bold;
+	margin-top: 1em;
+	font-family: Cambria;
+}
+
+.paragraph {
+	text-align: justify;
+	font-family: 'Segoe UI';
+	font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+ .paragraph {
+	padding-top: 10vw;
+	padding-bottom: 7vw;
+ }
+}
+
+.bottom {
+	text-align: center;
+	font-family: 'Segoe UI';
+	font-size: 12px;
+	padding-top: 30px;
+}
+@media screen and (max-width: 800px) {
+ .bottom {
+	padding-top: 20vw;
+	padding-bottom: 10vw;
+ }
+}
+
+li{ margin:10px;padding:0px} 
+
+
