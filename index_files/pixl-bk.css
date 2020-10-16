@@ -13,7 +13,7 @@ body {
 @media screen and (max-width: 800px) {
  body {
 	font-size: 3vw;
-	font-family: 'Segoe UI';
+	font-family:  "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
  }
 }
 
@@ -34,7 +34,7 @@ a:hover, a:active {
 	right: 0px;
 	padding-right: 20px;
 	text-align: right;
-	font-family: Arial, 'Segoe UI';
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 16px;
 	height: 40px;
@@ -80,14 +80,14 @@ a:hover, a:active {
 }
 .authors {
 	font-size: 100%;
-	font-family: Cochin;
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 }
 
 .table{
 	max-width: 100%;
 	text-align: center;
 	font-size: 16px;
-	font-family: Cambria;
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 }
 @media screen and (max-width: 800px) {
  .table {
@@ -114,7 +114,7 @@ a:hover, a:active {
 	font-size: 14px;
 	color: rgb(83, 83, 83);
 	font-style: italic;
-	font-family: 'Lucida Sans Unicode';
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 	text-align: justify;
 	font-weight: lighter;
 }
@@ -129,13 +129,14 @@ a:hover, a:active {
 	font-size: 125%;
 	font-weight: bold;
 	margin-top: 1em;
-	font-family: Cambria;
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 }
 
 .paragraph {
 	text-align: justify;
-	font-family: 'Segoe UI';
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 	font-size: 16px;
+	line-height: 150%;
 }
 @media screen and (max-width: 800px) {
  .paragraph {
@@ -146,7 +147,7 @@ a:hover, a:active {
 
 .bottom {
 	text-align: center;
-	font-family: 'Segoe UI';
+	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 	font-size: 12px;
 	padding-top: 30px;
 }
