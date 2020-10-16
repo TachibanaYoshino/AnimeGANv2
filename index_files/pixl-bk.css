@@ -10,7 +10,7 @@ body {
 	color: rgb(0, 0, 0);
 	padding-bottom: 5vw;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  body {
 	font-size: 3vw;
 	font-family:  "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
@@ -41,7 +41,7 @@ a:hover, a:active {
 	background-color:#fcfda3 ;
 	border-bottom: 0.15vw solid #000;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  .roof {
 	height: 2.75vw;
 	border-bottom: 0.15vw solid #000;
@@ -52,10 +52,10 @@ a:hover, a:active {
 
 /* Centered tables or divs */
 .content {
-	width: 800px;
+	width: 1000px;
 	margin: 0px auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  .content {
 	width: 90vw;
  }
@@ -67,7 +67,7 @@ a:hover, a:active {
 	padding-top: 80px;
 	padding-bottom: 56px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  .pageheader {
 	padding-top: 10vw;
 	padding-bottom: 7vw;
@@ -89,7 +89,7 @@ a:hover, a:active {
 	font-size: 16px;
 	font-family: "Helvetica Neue", Helvetica, Tahoma, Arial, sans-serif;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  .table {
 	padding-top: 7vw;
 	padding-bottom: 7vw;
@@ -138,7 +138,7 @@ a:hover, a:active {
 	font-size: 16px;
 	line-height: 150%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  .paragraph {
 	padding-top: 10vw;
 	padding-bottom: 7vw;
@@ -151,7 +151,7 @@ a:hover, a:active {
 	font-size: 12px;
 	padding-top: 30px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
  .bottom {
 	padding-top: 20vw;
 	padding-bottom: 10vw;
