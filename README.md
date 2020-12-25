@@ -3,6 +3,9 @@
 「Open Source」. The improved version of AnimeGAN.  
 「[Project Page](https://tachibanayoshino.github.io/AnimeGANv2/)」 | Landscape photos/videos to anime  
 -----  
+**News**  
+(2020.12.25)  AnimeGANv3 will be released along with its paper in the spring of 2021.  
+
 **Focus:**  
 <table border="1px ridge">
 	<tr align="center">
