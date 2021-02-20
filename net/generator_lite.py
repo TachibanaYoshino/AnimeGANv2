@@ -73,40 +73,43 @@ class G_net(object):
 
         with tf.variable_scope('G_MODEL'):
 
-            with tf.variable_scope('A'):
-                inputs = Conv2DNormLReLU(inputs, 32, 7)
-                inputs = Conv2DNormLReLU(inputs, 32, strides=2)
-                inputs = Conv2DNormLReLU(inputs, 32)
+            
+            x0 = Conv2DNormLReLU(inputs, 32, 7)
+            
+            x1 = Conv2DNormLReLU(x0, 32, strides=2)
+            x1 = Conv2DNormLReLU(x1, 64)
+           
+            x2 = Conv2DNormLReLU(x1, 64, strides=2)
+            x2 = Conv2DNormLReLU(x2, 128)
+            
+            x3 = Conv2DNormLReLU(x2, 64, strides=2)
+            x3 = Conv2DNormLReLU(x3, 128)
+          
+        
+            x3 = self.resBlock(x3,128, 'res1')
+            x3 = self.resBlock(x3,128, 'res2')
+            x3 = self.resBlock(x3,128, 'res3')
+            x3 = self.resBlock(x3,128, 'res4')
 
-            with tf.variable_scope('B'):
-                inputs = Conv2DNormLReLU(inputs, 64, strides=2)
-                inputs = Conv2DNormLReLU(inputs, 64)
-                inputs = Conv2DNormLReLU(inputs, 64)
-
-            with tf.variable_scope('C'):
-                inputs = self.resBlock(inputs,128, 'res1')
-                inputs = self.resBlock(inputs,128, 'res2')
-                inputs = self.resBlock(inputs,128, 'res3')
-                inputs = self.resBlock(inputs,128, 'res4')
-
-            with tf.variable_scope('D'):
-                inputs = Unsample(inputs, 64)
-                inputs = Conv2DNormLReLU(inputs, 64)
-                inputs = Conv2DNormLReLU(inputs, 64)
-
-            with tf.variable_scope('E'):
-                inputs = Unsample(inputs,32)
-                inputs = Conv2DNormLReLU(inputs, 32)
-                inputs = Conv2DNormLReLU(inputs, 32, 7)
+            
+            x4 = Unsample(x3, 128)
+            x4 = Conv2DNormLReLU(x4+x2, 64)
+            
+            x5 = Unsample(x4, 64)
+            x5 = Conv2DNormLReLU(x5+x1, 32)
+            
+            x6 = Unsample(x5, 32)
+            x6 = Conv2DNormLReLU(x6+x0, 32, 7)
 
             with tf.variable_scope('out_layer'):
-                out = Conv2D(inputs, filters =3, kernel_size=1, strides=1)
+                out = Conv2D(x6, filters =3, kernel_size=1, strides=1)
                 self.fake = tf.tanh(out)
+                
 
     def resBlock(self, x0, filters, name):
-        x = Conv2DNormLReLU(x0, filters, 1, name=name+'_1')
-        x = Conv2DNormLReLU(x, filters, 3, name=name+'_2')
-        x = Conv2D(x, filters//2, 1)
+        x = Conv2DNormLReLU(x0, filters//4, 1, name=name+'_1')
+        x = Conv2DNormLReLU(x, filters//4, 3, name=name+'_2')
+        x = Conv2D(x, filters, 1)
         return x0 + x
 
 
