@@ -5,25 +5,19 @@ import numpy as np
 
 class ImageGenerator(object):
 
-    def __init__(self, image_dir,size, batch_size, data_mean, num_cpus = 16):
+    def __init__(self, image_dir,size, batch_size, num_cpus = 16):
         self.paths = self.get_image_paths_train(image_dir)
         self.num_images = len(self.paths)
         self.num_cpus = num_cpus
         self.size = size
         self.batch_size = batch_size
-        self.data_mean = data_mean
 
     def get_image_paths_train(self, image_dir):
-
-        image_dir = os.path.join(image_dir)
-
         paths = []
-
         for path in os.listdir(image_dir):
             # Check extensions of filename
             if path.split('.')[-1] not in ['jpg', 'jpeg', 'png', 'gif']:
                 continue
-
             # Construct complete path to anime image
             path_full = os.path.join(image_dir, path)
 
@@ -32,7 +26,6 @@ class ImageGenerator(object):
                 continue
 
             paths.append(path_full)
-
         return paths
 
     def read_image(self, img_path1):
@@ -41,9 +34,6 @@ class ImageGenerator(object):
             # color image1
             image1 = cv2.imread(img_path1.decode()).astype(np.float32)
             image1 = cv2.cvtColor(image1, cv2.COLOR_BGR2RGB)
-            image1[:,:,0] += self.data_mean[2]
-            image1[:,:,1] += self.data_mean[1]
-            image1[:,:,2] += self.data_mean[0]
 
             # gray image2
             image2 = cv2.imread(img_path1.decode(),cv2.IMREAD_GRAYSCALE).astype(np.float32)

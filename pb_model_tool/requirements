@@ -1,9 +1,0 @@
-python 3.7
-tensorflow 1.15.0
-tensorflow-gpu 1.15.0 (ubuntu, GPU 2080Ti, cuda 10.0.130, cudnn 7.6.0)
-tensorflowjs >=2.7.0
-opencv
-tqdm
-numpy
-glob
-argparse

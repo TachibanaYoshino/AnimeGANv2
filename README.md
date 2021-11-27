@@ -36,10 +36,7 @@
       <td>BDRip</td>
 	</tr>
 </table>  
-  
-  
-  &ensp;&ensp;&ensp;&ensp;&ensp;Different styles of training have different loss weights!
-  
+   
 **News:**    
 ```yaml
 The improvement directions of AnimeGANv2 mainly include the following 4 points:  
@@ -54,42 +51,37 @@ ___
 
 ## Requirements  
 - python 3.6  
-- tensorflow-gpu 
-   - tensorflow-gpu 1.8.0  (ubuntu, GPU 1080Ti or Titan xp, cuda 9.0, cudnn 7.1.3)  
-   - tensorflow-gpu 1.15.0 (ubuntu, GPU 2080Ti, cuda 10.0.130, cudnn 7.6.0)  
+- tensorflow-gpu 1.15.0 (GPU 2080Ti, cuda 10.0.130, cudnn 7.6.0)  
 - opencv  
 - tqdm  
 - numpy  
 - glob  
 - argparse  
+- onnxruntime 1.9.0 (If onnx file needs to be run.)  
   
 ## Usage  
-
-### 1. Download vgg19    
+### 1. Inference  
+  > `python test.py  --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --save_dir Hayao/HR_photo`  
+    
+### 2. Convert video to anime  
+  > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  checkpoint/generator_Hayao_weight  --output video/output`  
+    
+### 3. Train 
+#### 1. Download vgg19    
   > [vgg19.npy](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/vgg16%2F19.npy)  
 
-### 2. Download Train/Val Photo dataset  
+#### 2. Download Train/Val Photo dataset  
   > [Link](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/dataset-1)  
 
-### 3. Do edge_smooth  
+#### 3. Do edge_smooth  
   > `python edge_smooth.py --dataset Hayao --img_size 256`  
-  
-### 4. Calculate the three-channel(BGR) color difference  
-  >  `python data_mean.py --dataset Hayao`  
-  
-### 5. Train  
-  >  `python main.py --phase train --dataset Hayao --data_mean [13.1360,-8.6698,-4.4661] --epoch 101 --init_epoch 10`  
-  >  For light version: `python main.py --phase train --dataset Hayao --data_mean [13.1360,-8.6698,-4.4661]  --light --epoch 101 --init_epoch 10`  
-  
-### 6. Extract the weights of the generator  
-  >  `python get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGAN_Hayao_lsgan_300_300_1_2_10_1  --style_name Hayao`  
 
-### 7. Inference      
-  > `python test.py --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --style_name Hayao/HR_photo`  
+#### 4. Train  
+  >  `python train.py --dataset Hayao --epoch 101 --init_epoch 10`  
   
-### 8. Convert video to anime   
-  > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  checkpoint/generator_Paprika_weight`  
-    
+#### 5. Extract the weights of the generator  
+  >  `python get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGANv2_Shinkai_lsgan_300_300_1_2_10_1  --style_name Shinkai`  
+  
 ____  
 ## Results  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/AnimeGANv2.png)   

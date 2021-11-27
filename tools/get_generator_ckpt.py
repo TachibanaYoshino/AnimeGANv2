@@ -1,7 +1,7 @@
 import argparse
 from tools.utils import *
 import os
-from net import generator,generator_lite
+from net import generator
 
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
@@ -9,7 +9,7 @@ def parse_args():
     desc = "AnimeGANv2"
     parser = argparse.ArgumentParser(description=desc)
 
-    parser.add_argument('--checkpoint_dir', type=str, default='../checkpoint/' + 'AnimeGANv2_Hayao_lsgan_300_300_1_2_10_1_lite',
+    parser.add_argument('--checkpoint_dir', type=str, default='../checkpoint/' + 'AnimeGANv2_Hayao_lsgan_300_300_1_2_10_1',
                         help='Directory name to save the checkpoints')
     parser.add_argument('--style_name', type=str, default='Hayao',
                         help='what style you want to get')
@@ -17,24 +17,17 @@ def parse_args():
     return parser.parse_args()
 
 def save(saver, sess, checkpoint_dir, model_name):
-
     save_path = os.path.join(checkpoint_dir, model_name + '.ckpt')
     saver.save(sess, save_path, write_meta_graph=True)
     return  save_path
 
 def main(checkpoint_dir, style_name):
-    if 'lite' in checkpoint_dir:
-        ckpt_dir = '../checkpoint/' + 'generator_' + style_name + '_weight_lite'
-    else:
-        ckpt_dir = '../checkpoint/' + 'generator_' + style_name + '_weight'
+    ckpt_dir = '../checkpoint/' + 'generator_' + style_name + '_weight'
     check_folder(ckpt_dir)
 
     placeholder = tf.placeholder(tf.float32, [1, None, None, 3], name='generator_input')
     with tf.variable_scope("generator", reuse=False):
-        if 'lite' in checkpoint_dir:
-            _ = generator_lite.G_net(placeholder).fake
-        else:
-            _ = generator.G_net(placeholder).fake
+        _ = generator.G_net(placeholder).fake
 
     generator_var = [var for var in tf.trainable_variables() if var.name.startswith('generator')]
     saver = tf.train.Saver(generator_var)
@@ -53,7 +46,6 @@ def main(checkpoint_dir, style_name):
         else:
             print(" [*] Failed to find a checkpoint")
             return
-
         info = save(saver, sess, ckpt_dir, style_name+'-'+counter)
 
         print(f'save over : {info} ')
