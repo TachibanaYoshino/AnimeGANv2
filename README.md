@@ -57,7 +57,7 @@ ___
 - numpy  
 - glob  
 - argparse  
-- onnxruntime 1.9.0 (If onnx file needs to be run.)  
+- onnxruntime (If onnx file needs to be run.)  
   
 ## Usage  
 ### 1. Inference  
