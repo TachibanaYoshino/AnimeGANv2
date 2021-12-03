@@ -65,7 +65,7 @@ def cvt2anime_video(video, output, checkpoint_dir, output_format='MP4V', img_siz
     # codec = cv2.VideoWriter_fourcc('M', 'J', 'P', 'G')
     codec = cv2.VideoWriter_fourcc(*output_format)
 
-    tfconfig = tf.v1.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
+    tfconfig = tf.compat.v1.ConfigProto(allow_soft_placement=True, gpu_options=gpu_options)
     with tf.Session(config=tfconfig) as sess:
         # tf.global_variables_initializer().run()
         # load model

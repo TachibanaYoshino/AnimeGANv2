@@ -36,22 +36,23 @@
       <td>BDRip</td>
 	</tr>
 </table>  
-   
+
 **News:**    
 ```yaml
 The improvement directions of AnimeGANv2 mainly include the following 4 points:  
-```  
+```
 - [x] 1. Solve the problem of high-frequency artifacts in the generated image.  
 - [x] 2. It is easy to train and directly achieve the effects in the paper.  
 - [x] 3. Further reduce the number of parameters of the generator network. **(generator size: 8.17 Mb)**, The lite version has a smaller generator model.  
 - [x] 4. Use new high-quality style data, which come from BD movies as much as possible.  
-   
+  
    &ensp;&ensp;&ensp;&ensp;&ensp;  AnimeGAN can be accessed from [here](https://github.com/TachibanaYoshino/AnimeGAN).  
-___  
+___
 
 ## Requirements  
 - python 3.6  
-- tensorflow-gpu 1.15.0 (GPU 2080Ti, cuda 10.0.130, cudnn 7.6.0)  
+- tensorflow-gpu 1.15.0 (GPU 2080Ti, cuda 10.0.130, cudnn 7.6.0)
+- tensorflow-estimator 1.15.1(tensorflow-estimator must less than 2.0)  
 - opencv  
 - tqdm  
 - numpy  
@@ -62,10 +63,10 @@ ___
 ## Usage  
 ### 1. Inference  
   > `python test.py  --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --save_dir Hayao/HR_photo`  
-    
+
 ### 2. Convert video to anime  
   > `python video2anime.py  --video video/input/お花見.mp4  --checkpoint_dir  checkpoint/generator_Hayao_weight  --output video/output`  
-    
+
 ### 3. Train 
 #### 1. Download vgg19    
   > [vgg19.npy](https://github.com/TachibanaYoshino/AnimeGAN/releases/tag/vgg16%2F19.npy)  
@@ -78,17 +79,17 @@ ___
 
 #### 4. Train  
   >  `python train.py --dataset Hayao --epoch 101 --init_epoch 10`  
-  
+
 #### 5. Extract the weights of the generator  
   >  `python get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGANv2_Shinkai_lsgan_300_300_1_2_10_1  --style_name Shinkai`  
-  
-____  
+
+____
 ## Results  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/AnimeGANv2.png)   
      
-____ 
+____
 :heart_eyes:  Photo  to  Paprika  Style  
-  
+
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/37.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/38.jpg)     
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/6.jpg)  
@@ -101,9 +102,9 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/11.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/5.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Paprika/concat/15.jpg)   
-____  
+____
 :heart_eyes:  Photo  to  Hayao  Style   
-  
+
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/AE86.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/10.jpg)     
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/15.jpg)  
@@ -116,7 +117,7 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/11.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/34.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Hayao/concat/18.jpg)    
-____  
+____
 :heart_eyes:  Photo  to  Shinkai  Style   
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/7.jpg)   
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/9.jpg)     
@@ -130,7 +131,7 @@ ____
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/21.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/3.jpg)  
 ![](https://github.com/TachibanaYoshino/AnimeGANv2/blob/master/results/Shinkai/concat/26.jpg)  
-  
+
 ## License  
 This repo is made freely available to academic and non-academic entities for non-commercial purposes such as academic research, teaching, scientific publications. Permission is granted to use the AnimeGANv2 given that you agree to my license terms. Regarding the request for commercial use, please contact us via email to help you obtain the  authorization letter.  
 ## Author  
