@@ -14,10 +14,10 @@ def parse_args():
     return parser.parse_args()
 
 def make_edge_smooth(dataset_name, img_size) :
-    check_folder(os.path.dirname(os.path.dirname(__file__))+'/dataset/{}/{}'.format(dataset_name, 'smooth'))
+    check_folder(os.path.dirname(os.path.dirname(__file__))+'./dataset/{}/{}'.format(dataset_name, 'smooth'))
 
-    file_list = glob(os.path.dirname(os.path.dirname(__file__))+'/dataset/{}/{}/*.*'.format(dataset_name, 'style'))
-    save_dir = os.path.dirname(os.path.dirname(__file__))+'/dataset/{}/smooth'.format(dataset_name)
+    file_list = glob(os.path.dirname(os.path.dirname(__file__))+'./dataset/{}/{}/*.*'.format(dataset_name, 'style'))
+    save_dir = os.path.dirname(os.path.dirname(__file__))+'./dataset/{}/smooth'.format(dataset_name)
 
     kernel_size = 5
     kernel = np.ones((kernel_size, kernel_size), np.uint8)
