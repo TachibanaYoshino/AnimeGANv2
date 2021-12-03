@@ -72,4 +72,4 @@ def test(checkpoint_dir, style_name, test_dir, if_adjust_brightness, img_size=[2
 if __name__ == '__main__':
     arg = parse_args()
     print(arg.checkpoint_dir)
-    test(arg.checkpoint_dir, arg.style_name, arg.test_dir, arg.if_adjust_brightness)
+    test(arg.checkpoint_dir, arg.save_dir, arg.test_dir, arg.if_adjust_brightness)
