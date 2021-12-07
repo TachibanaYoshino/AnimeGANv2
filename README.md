@@ -81,7 +81,7 @@ ___
   >  `python train.py --dataset Hayao --epoch 101 --init_epoch 10`  
 
 #### 5. Extract the weights of the generator  
-  >  `python get_generator_ckpt.py --checkpoint_dir  ../checkpoint/AnimeGANv2_Shinkai_lsgan_300_300_1_2_10_1  --style_name Shinkai`  
+  >  `python get_generator_ckpt.py --checkpoint_dir  /checkpoint/AnimeGANv2_Shinkai_lsgan_300_300_1_2_10_1  --style_name Shinkai`  
 
 ____
 ## Results  
