@@ -22,7 +22,7 @@ def save(saver, sess, checkpoint_dir, model_name):
     return  save_path
 
 def main(checkpoint_dir, style_name):
-    ckpt_dir = '/checkpoint/' + 'generator_' + style_name + '_weight'
+    ckpt_dir = './checkpoint/' + 'generator_' + style_name + '_weight'
     check_folder(ckpt_dir)
 
     placeholder = tf.placeholder(tf.float32, [1, None, None, 3], name='generator_input')
