@@ -9,6 +9,7 @@ import time, os, cv2
 import numpy as np
 pic_form = ['.jpeg','.jpg','.png','.JPEG','.JPG','.PNG']
 from glob import glob
+import tensorflow as tf
 
 def check_folder(path):
     if not os.path.exists(path):
@@ -42,7 +43,10 @@ def Convert(input_imgs_path, output_path, onnx ="model.onnx", img_size=[256,256]
     check_folder(result_dir)
     test_files = glob('{}/*.*'.format(input_imgs_path))
     test_files = [ x for x in test_files if os.path.splitext(x)[-1] in pic_form]
-    session = ort.InferenceSession(onnx, None)
+    if tf.test.is_gpu_available():
+        session = ort.InferenceSession(onnx, None,providers=["CUDAExecutionProvider"])
+    else:
+        session = ort.InferenceSession(onnx, None,providers=["CPUExecutionProvider"])
     x = session.get_inputs()[0].name
     y = session.get_outputs()[0].name
 
@@ -59,8 +63,8 @@ def Convert(input_imgs_path, output_path, onnx ="model.onnx", img_size=[256,256]
 
 if __name__ == '__main__':
 
-    onnx_file = 'Shinkai_53.onnx'
-    input_imgs_path = '/media/ada/0009B35A000DC852/a2/dataset/test/HR_photo'
-    output_path = 'Shinkai_53_output'
+    onnx_file = './pb_and_onnx_model/Shinkai_53.onnx'
+    input_imgs_path = './dataset/test/test_photo'
+    output_path = './pb_and_onnx_model/Shinkai_53_output'
     Convert(input_imgs_path, output_path, onnx_file)
 
