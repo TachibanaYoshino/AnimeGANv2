@@ -4,6 +4,7 @@
 「[Project Page](https://tachibanayoshino.github.io/AnimeGANv2/)」 | Landscape photos/videos to anime  
 -----  
 **News**  
+(2021.12.25)  [**AnimeGANv3**](https://github.com/TachibanaYoshino/AnimeGANv3) has been released.  
 (2020.12.25)  AnimeGANv3 will be released along with its paper in the spring of 2021.  
 (2021.02.21)  [The pytorch version of AnimeGANv2 has been released](https://github.com/bryandlee/animegan2-pytorch), Be grateful to @bryandlee for his contribution.  
 
