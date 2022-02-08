@@ -2,6 +2,7 @@ from AnimeGANv2 import AnimeGANv2
 import argparse
 from tools.utils import *
 import os
+import wandb
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 """parsing and configuration"""
@@ -46,6 +47,9 @@ def parse_args():
                         help='Directory name to save training logs')
     parser.add_argument('--sample_dir', type=str, default='samples',
                         help='Directory name to save the samples on training')
+    parser.add_argument("--use_wandb", default=True, type = bool, help = "Whether to use W&B for metric logging")
+    parser.add_argument("--wandb_project", default="AnimeGANv2", type=str, help="Name of the W&B Project")
+    parser.add_argument("--wandb_entity", default=None, type=str, help="entity to use for W&B logging")
 
     return check_args(parser.parse_args())
 
@@ -85,6 +89,10 @@ def main():
     gpu_options = tf.GPUOptions(allow_growth=True)
     with tf.Session(config=tf.ConfigProto(allow_soft_placement=True,inter_op_parallelism_threads=8,
                                intra_op_parallelism_threads=8,gpu_options=gpu_options)) as sess:
+
+        if args.args.use_wandb:
+            wandb.init(project=args.wandb_project, entity=args.wandb_entity, config=args)
+
         gan = AnimeGANv2(sess, args)
 
         # build graph
@@ -95,6 +103,7 @@ def main():
 
         gan.train()
         print(" [*] Training finished!")
+        wandb.tensorflow.log(tf.summary.merge_all())
 
 
 if __name__ == '__main__':
