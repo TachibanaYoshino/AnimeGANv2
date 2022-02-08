@@ -90,7 +90,7 @@ def main():
     with tf.Session(config=tf.ConfigProto(allow_soft_placement=True,inter_op_parallelism_threads=8,
                                intra_op_parallelism_threads=8,gpu_options=gpu_options)) as sess:
 
-        if args.args.use_wandb:
+        if args.use_wandb:
             wandb.init(project=args.wandb_project, entity=args.wandb_entity, config=args)
 
         gan = AnimeGANv2(sess, args)
@@ -103,7 +103,8 @@ def main():
 
         gan.train()
         print(" [*] Training finished!")
-        wandb.tensorflow.log(tf.summary.merge_all())
+        if args.use_wandb:
+            wandb.tensorflow.log(tf.summary.merge_all())
 
 
 if __name__ == '__main__':
