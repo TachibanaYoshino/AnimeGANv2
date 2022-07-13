@@ -1,7 +1,9 @@
-# AnimeGANv2   
+# AnimeGANv2    
 
 「Open Source」. The improved version of AnimeGAN.  
-「[Project Page](https://tachibanayoshino.github.io/AnimeGANv2/)」 | Landscape photos/videos to anime  
+「[Project Page](https://tachibanayoshino.github.io/AnimeGANv2/)」 | Landscape photos/videos to anime   
+
+### If you like what I'm doing you can tip me on [patreon](https://www.patreon.com/Asher_Chan).    
 -----  
 **News**  
 * (2021.12.25)  [**AnimeGANv3**](https://github.com/TachibanaYoshino/AnimeGANv3) has been released.:christmas_tree:  
