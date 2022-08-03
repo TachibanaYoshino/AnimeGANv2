@@ -3,9 +3,14 @@
 「Open Source」. The improved version of AnimeGAN.  
 「[Project Page](https://tachibanayoshino.github.io/AnimeGANv2/)」 | Landscape photos/videos to anime   
 
-### If you like what I'm doing you can tip me on [patreon](https://www.patreon.com/Asher_Chan).    
+### If you like what I'm doing you can tip me on [*patreon*](https://www.patreon.com/Asher_Chan).  
+Photos [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1PbBkmj1EhULvEE8AXr2z84pZ2DQJN4hc/view?usp=sharing)   
+    
+Videos [![Colab for videos](https://colab.research.google.com/assets/colab-badge.svg)](https://drive.google.com/file/d/1qhBxA72Wxbh6Eyhd-V0zY_jTIblP9rHz/view?usp=sharing)    
+
 -----  
 **News**  
+* (2022.08.03)  Added the AnimeGANv2 [Colab](https://drive.google.com/file/d/1PbBkmj1EhULvEE8AXr2z84pZ2DQJN4hc/view?usp=sharing).    
 * (2021.12.25)  [**AnimeGANv3**](https://github.com/TachibanaYoshino/AnimeGANv3) has been released.:christmas_tree:  
 * (2021.02.21)  [The pytorch version of AnimeGANv2 has been released](https://github.com/bryandlee/animegan2-pytorch), Be grateful to @bryandlee for his contribution. 
 * (2020.12.25)  AnimeGANv3 will be released along with its paper in the spring of 2021.  
