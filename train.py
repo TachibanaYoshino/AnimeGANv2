@@ -3,6 +3,7 @@ import argparse
 from tools.utils import *
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["TF_FORCE_GPU_ALLOW_GROWTH"]= "true"
 
 """parsing and configuration"""
 
