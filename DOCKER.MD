@@ -4,6 +4,7 @@
 - [2. Guide to use AnimeGanV2 in docker container](#2-guide-to-use-animeganv2-in-docker-container)
   - [2.1. Building docker image](#21-building-docker-image)
   - [2.2. Running AnimeGANv2 tools in container](#22-running-animeganv2-tools-in-container)
+  - [2.3. Non-root user in container](#23-non-root-user-in-container)
 
 ## 1. Requirements
 
@@ -34,9 +35,9 @@ Step 1: start container shell
 
 ```shell
 docker run --rm -it \
-    --mount type=bind,source="$(pwd)"/dataset,target=/anime_gan_dir/dataset \
-    --mount type=bind,source="$(pwd)"/results,target=/anime_gan_dir/results \
-    --mount type=bind,source="$(pwd)"/video,target=/anime_gan_dir/video \
+    --mount type=bind,source="$(pwd)"/dataset,target=/home/animegan/dataset \
+    --mount type=bind,source="$(pwd)"/results,target=/home/animegan/results \
+    --mount type=bind,source="$(pwd)"/video,target=/home/animegan/video \
     animegan:v2
 ```
 
@@ -45,7 +46,7 @@ It will create container, mount folders `dataset`, `results`, and `video`, and c
 In terminal output, you must see something like that:
 
 ```shell
-animegan@4f70da4ce086:/anime_gan_dir$ 
+animegan@4f70da4ce086:/home/animegan 
 ```
 
 Then you can run scripts as if you would in repo working forlder. For exapmle, try to run test script:
@@ -57,3 +58,14 @@ python test.py --checkpoint_dir checkpoint/generator_Hayao_weight  --test_dir da
 As a result, file [results/Hayao/HR_photo_docker/AE86.png](results/Hayao/HR_photo_docker/AE86.png) must appear
 
 When you exit container started with `--rm`, it gets removed automatically. Image will persist.
+
+### 2.3. Non-root user in container
+
+```shell
+docker build --build-arg UID=$(id -u) --build-arg GID=$(id -g) --tag animegan:v2 .
+```
+
+TODO:
+
+- <https://stackoverflow.com/questions/63122486/the-tensorflow-docker-gpu-image-doesnt-detect-my-gpu>
+- <https://github.com/NVIDIA/nvidia-docker/issues/1034#issuecomment-520282450>
