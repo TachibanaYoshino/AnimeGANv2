@@ -1,0 +1,11 @@
+.vscode/
+
+.github/
+
+dataset/
+results/
+video/
+
+*/__pycache__/
+net/__pycache__/
+tools/__pycache__/
