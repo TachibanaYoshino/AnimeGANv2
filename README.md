@@ -70,6 +70,8 @@ ___
 - argparse  
 - onnxruntime (If onnx file needs to be run.)  
   
+you can use pip install -r requirements.txt to install them
+
 ## Usage  
 ### 1. Inference  
   > `python test.py  --checkpoint_dir  checkpoint/generator_Hayao_weight  --test_dir dataset/test/HR_photo --save_dir Hayao/HR_photo`  
